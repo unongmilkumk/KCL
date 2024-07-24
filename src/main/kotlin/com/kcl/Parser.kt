@@ -15,6 +15,7 @@ class Parser(text: String) {
         do {
             token = lexer.nextToken()
 
+
             if (token.type != SyntaxType.WHITESPACE_TOKEN && token.type != SyntaxType.ERROR_TOKEN) {
                 tokens.add(token)
             }

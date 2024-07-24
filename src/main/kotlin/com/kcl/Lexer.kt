@@ -13,7 +13,7 @@ class Lexer(private val _text : String) {
     fun peek(offset : Int) : Char {
         val index = _position + offset
         if (index >= _text.length) return (0).toChar()
-        return _text[_position]
+        return _text[index]
     }
 
     fun next() {
